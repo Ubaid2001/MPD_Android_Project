@@ -1,0 +1,110 @@
+
+<!--Student Name: Ubaid Mahmood-->
+<!--Student ID: S1906881-->
+<!--Programme of Study: BS/c Hons Computing-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/primary">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewFlipper">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/mapFragment"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@id/mapFragment"
+                android:layout_alignRight="@id/mapFragment"
+                android:id="@+id/fullScreenIcon"
+                android:src="@drawable/fullscreen" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_below="@id/mapFragment">
+
+                <RelativeLayout
+                    android:id="@+id/relLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listFragmentContainer"
+                        />
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/acknowledgement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contains British Geological Survey materials ©NERC 2019"
+                android:textColor="#C6C6C6"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout3">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mapFragment2"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/exitFullScreen"
+                android:layout_alignBottom="@id/mapFragment2"
+                android:layout_alignRight="@id/mapFragment2"
+                android:src="@drawable/exitfullscreen" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="This App Needs Internet Connection. Connect to the Internet and Reload the App!!!"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginHorizontal="50dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+</RelativeLayout>

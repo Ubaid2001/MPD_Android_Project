@@ -1,0 +1,22 @@
+<!--Student Name: Ubaid Mahmood-->
+<!--Student ID: S1906881-->
+<!--Programme of Study: BS/c Hons Computing-->
+
+<resources>
+    <string name="app_name">S1906881</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sortingSpinner">
+        <item>All</item>
+        <item>Nearest Northern</item>
+        <item>Nearest Eastern</item>
+        <item>Nearest Southern</item>
+        <item>Nearest Western</item>
+        <item>Shallowest Depth</item>
+        <item>Greatest Magnitude</item>
+    </string-array>
+
+    <string name="search_hint">Search 11 Mar 2023 in Loch Hourn, Highland </string>
+    <string name="check_lists_for_more_details">Check Lists for More Details</string>
+</resources>

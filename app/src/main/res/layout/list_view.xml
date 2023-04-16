@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Student Name: Ubaid Mahmood-->
+<!--Student ID: S1906881-->
+<!--Programme of Study: BS/c Hons Computing-->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    android:background="@color/tertiary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/linearLayout1"
+            android:background="@color/secondary"
+            >
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:drawableLeft="@drawable/locationicon"
+                android:drawableTint="#7800C3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listButton"
+                android:text="Expand"
+                android:background="@drawable/roundedbutton"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginHorizontal="5dp"
+                android:textSize="10sp"
+
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout2"
+            android:layout_below="@id/linearLayout1"
+            android:background="@color/tertiary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Magnitude: "
+                        android:id="@+id/theMagnitude"
+                        android:textColor="@color/white"
+                        android:layout_marginHorizontal="35dp"
+                        android:drawableLeft="@drawable/magnitude"
+                        android:drawablePadding="5dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/theDepth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:drawableLeft="@drawable/depthicon"
+                        android:drawablePadding="5dp"
+                        android:text="Depth: "
+                        android:textColor="@color/white"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dateView"
+                        android:text="This is the Date"
+                        android:layout_marginHorizontal="35dp"
+                        android:drawableLeft="@drawable/dateicon"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/categoryView"
+                        android:text="Category: "
+                        android:layout_marginHorizontal="35dp"
+                        android:drawableLeft="@drawable/categoryicon"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/latView"
+                        android:text=" Lat: "
+                        android:layout_marginHorizontal="35dp"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/latlongicon"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/longView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="70dp"
+                        android:drawableLeft="@drawable/latlongicon"
+                        android:text=" Long: "
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="For more Information: "
+                        android:layout_marginHorizontal="35dp"
+                        android:id="@+id/urlView"
+                        android:autoLink="web"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
